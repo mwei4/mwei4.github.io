@@ -6,7 +6,7 @@ title: Michael Wei
 superuser: true
 
 # Role/position/tagline
-role: Professor of Artificial Intelligence
+# role: Professor of Artificial Intelligence
 
 # Organizations/Affiliations to show in About widget
 # organizations:
@@ -18,9 +18,9 @@ bio: My research interests include distributed robotics, mobile computing and pr
 
 # Interests to show in About widget
 interests:
-  - Machine Learning
   - Blockchain
   - Optimization
+  - Machine Learning
 
 # Education to show in About widget
 education:
@@ -36,7 +36,7 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:mw756@cornell.edu'
+    link: '/#contact'
   - icon: github
     icon_pack: fab
     link: https://github.com/mwei4
@@ -58,6 +58,6 @@ email: ''
 highlight_name: true
 ---
 
-I'm a sophomore at Cornell University studying computer science.
+I'm a sophomore at Cornell University studying computer science. 
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
