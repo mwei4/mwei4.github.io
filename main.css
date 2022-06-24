@@ -1,15 +1,31 @@
-a:link {
+a.footer-linkedin:link,
+a.footer-github:link {
   color: black;
   text-decoration: none;
 }
 
-a:visited {
+a.footer-linkedin:visited,
+a.footer-github:visited {
   color: black;
   text-decoration: none;
 }
 
-a:hover {
+a.footer-linkedin:hover,
+a.footer-github:hover {
   background: #a9a8df;
+}
+
+a.howard:link {
+  text-decoration: none;
+}
+
+a.howard:visited {
+  color: black;
+  text-decoration: none;
+}
+
+a.howard:hover {
+  font-weight: bold;
 }
 
 body {
@@ -29,4 +45,11 @@ p.about-me {
   text-align: left;
   max-width: 600px;
   font-size: x-large;
+}
+
+mark {
+  display: inline-block;
+  line-height: 0em;
+  padding-bottom: 0.5em;
+  background-color: #d0f3a2;
 }
