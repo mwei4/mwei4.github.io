@@ -8,11 +8,24 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
-  <p class="about-me">
-    👋 I'm Michael Wei, broadly interested in computer science, math, and operations
-    research. I'm currently a sophomore at Cornell University, studying computer science.</p>
-  <br><img src="images/cornell-sunset-1.jpg" alt="Cornell Sunset" width="25%" height="25%">
+<body onload="typeWriter();">
+  <p class="about-me" id="about-me"></p>
+
+  <script>
+    var i = 0;
+    var txt = '👋 I\'m Michael Wei, broadly interested in computer science, math, and operations research. I\'m currently a sophomore at Cornell University, studying computer science.';
+    var speed = 40;
+
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("about-me").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+  </script>
+
+  <br><img src="images/cornell-sunset-1.jpg" alt="Cornell Sunset, credit Howard Hua" width="25%" height="25%">
   <figcaption>Cornell Sunset</figcaption>
 
 
