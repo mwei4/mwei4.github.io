@@ -1,6 +1,10 @@
 var i = 0;
 var txt = '👋 I\'m Michael Wei, broadly interested in computer science, math, and operations research. I\'m currently a sophomore at Cornell University, studying computer science.';
-var speed = 40;
+var speed = 32;
+
+function waitWrite() {
+  setTimeout(function () { typeWriter(); }, 1000);
+}
 
 function typeWriter() {
   if (i < txt.length) {

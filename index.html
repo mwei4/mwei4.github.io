@@ -4,29 +4,43 @@
 <head>
   <title>Michael Wei</title>
   <link rel="icon" type="image/png" href="images/favicon.png" />
-  <link rel="stylesheet" type="text/css" href="main.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="js/myscript.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+
 </head>
 
-<body onload="typeWriter();">
-  <p class="about-me" id="about-me"></p>
+<body onload="waitWrite();">
 
-  <script src="myscript.js"></script>
+  <div id="fade-1">
+    <p class="about-me" id="about-me"></p>
+  </div>
+  <div id="fade-2">
+    <img id="zoom" src="images/cornell-sunset-1.jpg" alt="Cornell Sunset, credit Howard Hua">
+  </div>
+  <div id="fade-3">
+    <figcaption>Cornell Sunset, 📷 <mark><a class="howard"
+          href="https://www.linkedin.com/in/howard-hua-8b8316202/">Howard
+          Hua</a></mark>
+    </figcaption>
+  </div>
+  <div id="fade-4">
+    <footer>
+      <p>2022 © Michael Wei<br>
+        <a class="footer-github" href="https://github.com/mwei4"><i class="fa">&#xf09b;</i>&thinsp;Github</a>
+        <a class="footer-linkedin" href="https://www.linkedin.com/in/michael-w-3aa852208/"><i
+            class="fa">&#xf08c;</i>&thinsp;Linkedin</a>
+      </p>
+    </footer>
+  </div>
 
-  <br><img id="zoom" src="images/cornell-sunset-1.jpg" alt="Cornell Sunset, credit Howard Hua">
-  <figcaption>Cornell Sunset, 📷 <mark><a class="howard" href="https://www.linkedin.com/in/howard-hua-8b8316202/">Howard
-        Hua</a></mark>
-  </figcaption>
-
-
-  <footer>
-    <p>2022 © Michael Wei<br>
-      <a class="footer-github" href="https://github.com/mwei4"><i class="fa">&#xf09b;</i>&thinsp;Github</a>
-      <a class="footer-linkedin" href="https://www.linkedin.com/in/michael-w-3aa852208/"><i
-          class="fa">&#xf08c;</i>&thinsp;Linkedin</a>
-    </p>
-  </footer>
-
+  <script type="text/javascript">
+    $('#fade-1').fadeIn(0);
+    $('#fade-2').delay(7000).fadeIn(1000);
+    $('#fade-3').delay(8500).fadeIn(1000);
+    $('#fade-4').delay(10000).fadeIn(1000);
+  </script>
 </body>
 
 </html>
