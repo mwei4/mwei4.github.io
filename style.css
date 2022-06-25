@@ -51,7 +51,7 @@ mark {
   display: inline-block;
   line-height: 0em;
   padding-bottom: 0.5em;
-  background-color: #d0f3a2;
+  background-color: #e9c67a;
 }
 
 #zoom {
@@ -67,4 +67,21 @@ mark {
 
 div {
   display: none;
+}
+
+#fade-1,
+#fade-2,
+#fade-3,
+#fade-4 {
+  z-index: 1;
+}
+
+#particles-js {
+  position: fixed;
+  background: rgb(127, 179, 187);
+  width: 105%;
+  height: 105%;
+  z-index: -1;
+  margin-left: -1em;
+  margin-top: -1em;
 }
